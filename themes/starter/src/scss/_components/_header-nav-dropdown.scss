@@ -1,0 +1,37 @@
+/**
+ * Nav dropdown
+ *
+ */
+
+.header-nav-dropdown {
+  background-color: $header-nav-dropdown-background-color;
+  font-size: .85em;
+  list-style-type: none;
+  margin: 0 0 20px 0;
+  padding: 0;
+  width: 100%;
+
+  @media (min-width: $header-nav-mobile-breakpoint) {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    padding: 10px 0;
+    margin: 0;
+    transition: all .12s ease;
+    width: auto;
+    z-index: 1000;
+
+    .header-nav-section__item.hover &,
+    .header-nav-section__item:hover & {
+      visibility: visible;
+      opacity: 1;
+      top: 40px;
+    }
+  }
+}
+
+.header-nav-dropdown__item {
+  > a { display: inline-block; }
+}

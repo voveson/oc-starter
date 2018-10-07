@@ -1,0 +1,35 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js ie6"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+  {% partial 'meta' %}
+</head>
+<body class="layout-{{ this.layout.id }}">
+  {% partial 'tracking-header' %}
+
+  <div class="wrapper">
+    {% partial 'header' %}
+
+    <main class="main" role="main">
+      <div class="container-fluid">
+        <h1 class="page-title">{{ this.page.title }}</h1>
+        <div class="oc-wysiwyg">
+          {% page %}
+        </div>
+      </div>
+    </main>
+
+    {% partial 'footer' %}
+  </div>
+
+  {% partial 'scripts' %}
+  {% partial 'tracking-footer' %}
+</body>
+</html>

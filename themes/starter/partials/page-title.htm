@@ -1,0 +1,7 @@
+{% if this.page.meta_title %}
+  {{ this.page.meta_title }}
+{% elseif (this.page.url == '/') %}
+  {{ this.theme.site_name }}
+{% else %}
+  {{ this.page.title }} - {{ this.theme.site_name }}
+{% endif %}

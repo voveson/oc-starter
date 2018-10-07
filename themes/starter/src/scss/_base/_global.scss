@@ -1,0 +1,28 @@
+/**
+ * Global
+ *
+ */
+
+html,
+body {
+  font-size: $base-font-size;
+}
+
+body {
+  background-color: $body-background-color;
+  color: $base-text-color;
+  font-size: 1rem;
+  font-family: $font-primary;
+  text-rendering: optimizeLegibility;
+  @include font-smoothing();
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}

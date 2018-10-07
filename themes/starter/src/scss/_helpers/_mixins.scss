@@ -1,0 +1,103 @@
+/**
+ * Mixins
+ *
+ */
+
+/*
+ * Form Control Placeholder
+ *
+ */
+
+@mixin form-control-placeholder() {
+  color: $form-control-placeholder-color;
+}
+
+
+/*
+ * Font Anti-aliased
+ *
+ */
+
+@mixin font-smoothing() {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*
+ * Hide Text
+ *
+ */
+
+@mixin hide-text() {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+
+/*
+ * List Reset
+ *
+ */
+
+@mixin list-reset() {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+/*
+ * Page title
+ *
+ */
+
+@mixin page-title() {
+  color: $color-primary;
+  font-size: $h1-font-size;
+  font-weight: normal;
+  margin-bottom: 42px;
+}
+
+
+/*
+ * Lead
+ *
+ */
+
+@mixin lead() {
+  font-size: 21px;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/*
+ * Section Title
+ *
+ */
+
+@mixin section-title($font-size: $h1-font-size) {
+  font-size: calc(#{$font-size} / 1.5);
+  line-height: 1.1em;
+  font-weight: bold;
+  margin-bottom: 15px;
+
+  @include media-breakpoint-up(lg) {
+    font-size: $font-size;
+  }
+
+  span {
+    font-weight: normal;
+  }
+
+  em {
+    color: $color-secondary;
+    font-weight: bold;
+    font-style: normal;
+  }
+}

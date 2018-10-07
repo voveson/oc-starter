@@ -1,0 +1,44 @@
+/**
+ * Form Control
+ *
+ */
+
+.form-control {
+  appearance: none;
+  background-color: #fff;
+  border: 1px #ddd solid;
+  border-radius: 0;
+  box-shadow: none;
+  height: auto;
+  font-size: 1rem;
+  padding: 10px 15px;
+  width: 100%;
+
+  &::-webkit-input-placeholder { @include form-control-placeholder(); }
+  &:-moz-placeholder { @include form-control-placeholder(); }
+  &::-moz-placeholder { @include form-control-placeholder(); }
+  &:-ms-input-placeholder { @include form-control-placeholder(); }
+
+  &.has-error { border-color: $color-error; }
+}
+
+/*
+ * Select element fix
+ * Makes the element look more consistent across browsers
+ */
+select.form-control {
+  appearance: none;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIj48ZGVmcz48c3R5bGU+LmNscy0xe2ZpbGw6I2ZmZjt9LmNscy0ye2ZpbGw6IzQ0NDt9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmFycm93czwvdGl0bGU+PHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNC45NSIgaGVpZ2h0PSIxMCIvPjxwb2x5Z29uIGNsYXNzPSJjbHMtMiIgcG9pbnRzPSIxLjQxIDQuNjcgMi40OCAzLjE4IDMuNTQgNC42NyAxLjQxIDQuNjciLz48cG9seWdvbiBjbGFzcz0iY2xzLTIiIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIi8+PC9zdmc+");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) 50%;
+  padding-right: 37px;
+
+  option[disabled] { color: #ccc; }
+}
+
+textarea.form-control { min-height: 200px; }
+
+@media all and (-ms-high-contrast:none) {
+  *::-ms-backdrop,
+  select.form-control { background: none; } /* IE11 */
+}

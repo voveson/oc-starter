@@ -1,0 +1,14 @@
+/**
+ * Anchors
+ *
+ */
+
+a {
+  &,
+  &:focus,
+  &:active,
+  &:hover {
+    color: currentColor;
+    text-decoration: none;
+  }
+}

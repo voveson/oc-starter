@@ -1,0 +1,12 @@
+/**
+ * Page Title
+ *
+ */
+
+.page-title {
+  @include page-title();
+
+  .section &:last-child:first-child {
+    margin-bottom: 0;
+  }
+}

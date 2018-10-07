@@ -1,0 +1,17 @@
+/**
+ * Form Checkbox
+ *
+ */
+
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    position: relative;
+    top: 3px;
+  }
+
+  > span { padding-left: 5px; }
+}

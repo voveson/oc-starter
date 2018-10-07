@@ -1,0 +1,22 @@
+/**
+ * Flexboxgrid
+ *
+ */
+
+@import "../../../node_modules/flexboxgrid2/flexboxgrid2";
+
+.container-fluid {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: $base-max-width;
+  margin: 0 auto;
+
+  @include media-breakpoint-up(sm) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.container-fluid--narrow {
+  max-width: $content-max-width;
+}

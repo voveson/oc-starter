@@ -1,0 +1,41 @@
+/**
+ * Alert
+ *
+ */
+
+.alert {
+  background-color: $color-success;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 15px;
+  font-size: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.alert--large {
+  font-size: 14px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 26px;
+  }
+}
+
+.alert--success {
+  background-color: $color-success;
+  color: #ffffff;
+}
+
+.alert--error {
+  background-color: $color-error;
+  color: #ffffff;
+}

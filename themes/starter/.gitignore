@@ -1,0 +1,12 @@
+node_modules
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.DS_Store
+
+# Ignore meta, content folders, managed by backend users.
+# don't ignore .sync
+meta/*
+!meta/.sync
+content/*
+!content/.sync

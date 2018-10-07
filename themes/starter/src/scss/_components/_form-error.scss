@@ -1,0 +1,11 @@
+/**
+ * Form Error
+ *
+ */
+
+.form-field-error-label,
+.form-error {
+  color: $color-error;
+
+  a { text-decoration: underline; }
+}

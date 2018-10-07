@@ -1,0 +1,45 @@
+/**
+ * Nav collapse
+ *
+ */
+
+.header-nav-collapse {
+  clear: both;
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+  transition: opacity .12s ease-in;
+
+  @media (min-width: $header-nav-mobile-breakpoint) {
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    width: 100%;
+  }
+  @include media-breakpoint-up(md) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &.header-nav-is-open {
+    @media (max-width: $header-nav-mobile-breakpoint) {
+      max-height: initial;
+      opacity: 1;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba($header-nav-background-color,.97);
+      padding: 50px 0;
+      z-index: 99999;
+      overflow-y: auto;
+    }
+  }
+}
+
+body.header-nav-is-open {
+  @media (max-width: 900px) {
+    overflow: hidden;
+  }
+}

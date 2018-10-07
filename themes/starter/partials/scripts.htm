@@ -1,0 +1,20 @@
+
+<script src="{{ '/assets/js/app.js' | mix }}"></script>
+{% framework extras %}
+{% scripts %}
+
+<script>
+  /*
+   * Custom AJAX error message display, prevents from displaying alert() message
+   * https://github.com/rainlab/user-plugin#ajax-errors
+   */
+  $(window).on('ajaxErrorMessage', function(e, message) {
+    e.preventDefault();
+
+    $.oc.flashMsg({
+      'text': message,
+      'class': 'error',
+      'interval': 5
+    });
+  });
+</script>

@@ -1,0 +1,149 @@
+title = "Default page"
+url = "/"
+layout = "default-cms"
+is_hidden = 0
+==
+<div class="example-page">
+  <nav class="header-nav" role="navigation">
+    <div class="container-fluid">
+      <a class="header-nav-toggle js-header-nav-collapse" href="#" title="Toggle navigation" data-header-nav-collapse=".toggle-header-nav">
+        <span class="header-nav-toggle__bar"></span>
+        <span class="header-nav-toggle__bar"></span>
+        <span class="header-nav-toggle__bar"></span>
+      </a>
+      <div class="header-nav-collapse toggle-header-nav">
+        <a href="#" class="header-nav-toggle header-nav-toggle--close js-header-nav-collapse" title="Toggle navigation" data-header-nav-collapse=".toggle-header-nav">&times;</a>
+        <ul class="header-nav-section">
+          <li class="header-nav-section__item">
+            <a class="header-nav-section__link" href="#">Nav Item #1</a>
+          </li>
+          <li class="header-nav-section__item">
+            <a class="header-nav-section__link" href="#">Nav Item #2</a>
+          </li>
+          <li class="header-nav-section__item">
+            <a class="header-nav-section__link" href="#">Nav Item #3</a>
+          </li>
+          <li class="header-nav-section__item">
+            <a class="header-nav-section__link" href="#">Nav Item #4</a>
+          </li>
+          <li class="header-nav-section__item">
+            <a class="header-nav-section__link" href="#">Nav Item #5</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="u-margin-top-medium container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <!--
+        #########################################
+        COLUMN 1
+        #########################################
+        -->
+        <h3>Headings</h3>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+        <br>
+        <h3>Muted Text Class</h3>
+        <h3>Heading Text <small class="text-muted">With muted secondary text</small></h3>
+        <br>
+        <h3>Blockquote</h3>
+        <blockquote class="blockquote">
+          <p class="mb-0">Typography is to literature as musical performance is to composition: an essential act of interpretation, full of endless opportunities for insight or obtuseness.</p>
+          <footer class="blockquote-footer">
+            Robert Bringhurst in <cite title="Source Title">The Elements of Typographic Style</cite>
+          </footer>
+        </blockquote>
+        <br>
+        <h3>Table</h3>
+        <table class="table">
+          <thead class="thead-default">
+            <tr>
+              <th>#</th>
+              <th>thead-default</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Nina</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Penta</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Santa Maria</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table">
+          <thead class="thead-inverse">
+            <tr>
+              <th>#</th>
+              <th>thead-inverse</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Nina</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Penta</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Santa Maria</td>
+            </tr>
+          </tbody>
+        </table>
+      </div><!--  /.col    -->
+      <div class="col-xs-12 col-sm-6">
+        <!--
+        #########################################
+        COLUMN 2
+        #########################################
+        -->
+        <h3>Lead</h3>
+        <p class="lead">A lead paragraph is used to draw a reader into the body copy. In a badly designed book, the letters mill and stand like starving horses in a field. In a book designed by rote, they sit like stale bread and mutton on the page.</p>
+        <p>In a well-made book, where designer, compositor and printer have all done their jobs, no matter how many thousands of lines and pages, the letters are alive. They dance in their seats. Sometimes they rise and dance in the margins and aisles.</p>
+        <br>
+        <h3>Default List</h3>
+        <ul>
+          <li>Default list item text</li>
+          <li>Default list item text</li>
+          <li>Default list item text</li>
+        </ul>
+        <br>
+        <h3>Unstyled List</h3>
+        <ul class="list-unstyled">
+          <li>Unstyled list item text</li>
+          <li>Unstyled list item text
+            <ul>
+              <li>Nested list items need the <code>.list-unstyled</code> class as well or they will have bullets</li>
+            </ul>
+          </li>
+          <li>Unstyled list item text</li>
+          <li>Unstyled list item text</li>
+        </ul>
+        <br>
+        <h3>Inline List</h3>
+        <ul class="list-inline">
+          <li class="list-inline-item">List item one</li>
+          <li class="list-inline-item">List item two</li>
+          <li class="list-inline-item">List item three</li>
+        </ul>
+        <br>
+        <h3>Image Thumbnails</h3><img alt="" class="img-thumbnail" src="https://placehold.it/80x80/563d7c/fff"> <img alt="" class="img-thumbnail" src="https://placehold.it/80x80/563d7c/fff"> <img alt="" class="img-thumbnail" src="https://placehold.it/80x80/563d7c/fff">
+      </div><!--  /.col    -->
+    </div><!--  /.row    -->
+  </div><!--  /.container-fluid    -->
+</div>

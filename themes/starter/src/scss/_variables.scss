@@ -1,0 +1,104 @@
+/**
+ * Variables
+ *
+ */
+
+/*
+ * Paths
+ *
+ */
+
+$assets-path: '..';
+$images-path: '../images';
+$fonts-path: '../fonts';
+
+
+/**
+ * Sizes
+ *
+ */
+
+$base-max-width: 1400px;
+$content-max-width: 900px;
+
+
+/*
+ * Colors
+ *
+ */
+
+/* Primary Color */
+$color-primary: #000000;
+$color-primary-offset: #ffffff;
+
+/* Secondary Color */
+$color-secondary: #aaaaaa;
+$color-secondary-offset: #ffffff;
+
+/* Misc Colors */
+$color-success: #9bc56d;
+$color-error: #b90707;
+$color-muted: #8c8c8c;
+
+/* Background */
+$body-background-color: #ffffff;
+$base-background-color: #ffffff;
+
+/* Text */
+$base-text-color: #101010;
+
+/* Borders */
+$border-separator-color: #cccccc;
+
+
+/*
+ * Nav
+ *
+ */
+
+/* Breakpoint */
+$header-nav-mobile-breakpoint: 767px;
+
+/* Background */
+$header-nav-background-color: #000000;
+$header-nav-dropdown-background-color: #000000;
+
+/* Links */
+$header-nav-text-color: #ffffff;
+$header-nav-hover-color: #ffffff;
+$header-nav-active-color: #ffffff;
+
+/* Toggle */
+$header-nav-toggle-icon-color: #000000;
+$header-nav-toggle-close-color: #ffffff;
+
+
+/*
+ * Fonts
+ *
+ */
+
+$base-font-size: 16PX; // pxtoem
+$font-primary: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-icon: 'fontello';
+
+
+/*
+ * Forms
+ *
+ */
+
+$form-control-placeholder-color: #c2c2c2;
+
+
+/*
+ * Bootstrap Overrides
+ *
+ */
+
+$h1-font-size: 30px;
+$h2-font-size: 26px;
+$h3-font-size: 22px;
+$h4-font-size: 18px;
+$h5-font-size: 17px;
+$h6-font-size: 16px;

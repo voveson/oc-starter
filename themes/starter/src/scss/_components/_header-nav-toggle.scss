@@ -1,0 +1,46 @@
+/**
+ * Nav toggle
+ *
+ */
+
+.header-nav-toggle {
+  padding: 15px;
+  line-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media (min-width: $header-nav-mobile-breakpoint) {
+    display: none;
+  }
+}
+
+.header-nav-toggle__bar {
+  background-color: $header-nav-toggle-icon-color;
+  height: 4px;
+  width: 26px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.header-nav-toggle--close {
+  color: $header-nav-toggle-close-color;
+  display: none;
+  font-size: 46px;
+  padding-top: 3px;
+
+  .header-nav-is-open & {
+    display: block;
+
+    @media (min-width: $header-nav-mobile-breakpoint) {
+      display: none;
+    }
+  }
+
+  &:hover { color: $header-nav-toggle-close-color; }
+}

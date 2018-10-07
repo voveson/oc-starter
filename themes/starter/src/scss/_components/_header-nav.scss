@@ -1,0 +1,14 @@
+/**
+ * Nav
+ *
+ */
+
+.header-nav {
+  background-color: $header-nav-background-color;
+  border: 0;
+  border-radius: 0;
+
+  @media (min-width: $header-nav-mobile-breakpoint) {
+    padding: 10px 0;
+  }
+}

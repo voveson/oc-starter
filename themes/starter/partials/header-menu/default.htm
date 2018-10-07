@@ -1,0 +1,17 @@
+{% if __SELF__.menuItems %}
+<nav class="header-nav" role="navigation">
+  <div class="container-fluid">
+    <a class="header-nav-toggle js-header-nav-collapse" href="#" title="Toggle navigation" data-header-nav-collapse=".toggle-header-nav">
+      <span class="header-nav-toggle__bar"></span>
+      <span class="header-nav-toggle__bar"></span>
+      <span class="header-nav-toggle__bar"></span>
+    </a>
+    <div class="header-nav-collapse toggle-header-nav">
+      <a href="#" class="header-nav-toggle header-nav-toggle--close js-header-nav-collapse" title="Toggle navigation" data-header-nav-collapse=".toggle-header-nav">&times;</a>
+      <ul class="header-nav-section">
+        {% partial __SELF__ ~ "::items" items=__SELF__.menuItems %}
+      </ul>
+    </div>
+  </div>
+</nav>
+{% endif %}

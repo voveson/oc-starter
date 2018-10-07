@@ -1,0 +1,17 @@
+{% for item in items if not item.viewBag.isHidden %}
+<li class="{{ navItemClassName ? navItemClassName : 'header-nav-section__item' }} {{ item.isActive ? 'header-nav-section__item--is-active' : '' }} {{ item.isChildActive ? 'header-nav-section__item--is-active' : '' }} {{ item.viewBag.cssClass }}" role="presentation">
+  {% if item.url %}
+  <a class="header-nav-section__link" href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }}>
+    {{ item.title }}
+  </a>
+  {% else %}
+  <span>{{ item.title }}</span>
+  {% endif %}
+
+  {% if item.items %}
+  <ul class="header-nav-dropdown">
+    {% partial __SELF__ ~ "::items" items=item.items navItemClassName="header-nav-dropdown__item" %}
+  </ul>
+  {% endif %}
+</li>
+{% endfor %}
