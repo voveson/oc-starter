@@ -12,7 +12,7 @@ __Database & Content__
 
   ```shell
   $ touch storage/database.sqlite && \
-    docker-compose run octobercms php artisan october:up
+    docker-compose run web php artisan october:up
   ```
 
   Now create a volume entry for the 'storage/database.sqlite' in `docker-compose.yml`:
@@ -49,7 +49,7 @@ __Start Docker__
   Run artisan and composer tasks within the octobercms container
 
   ```shell
-  $ docker-compose exec octobercms php artisan
+  $ docker-compose exec web php artisan
   ```
 
 More info:
