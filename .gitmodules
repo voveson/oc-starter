@@ -6,10 +6,10 @@
 	url = git@aspendigital.com:octobercms/backend-theme.git
 [submodule "plugins/devcatch/octobermix"]
 	path = plugins/devcatch/octobermix
-	url = git@github.com:voveson/oc-octobermix.git
+	url = git@github.com:dev-catch/oc-octobermix.git
 [submodule "plugins/devcatch/sslsupport"]
 	path = plugins/devcatch/sslsupport
-	url = git@github.com:voveson/oc-ssl-support.git
+	url = git@github.com:dev-catch/oc-ssl-support.git
 [submodule "plugins/devcatch/instagramfeed"]
 	path = plugins/devcatch/instagramfeed
-	url = git@github.com:voveson/oc-instagram-feed.git
+	url = git@github.com:dev-catch/oc-instagram-feed.git
