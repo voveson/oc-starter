@@ -1,9 +1,9 @@
 [submodule "plugins/aspendigital/lookfeel"]
 	path = plugins/aspendigital/lookfeel
-	url = git@aspendigital.com:octobercms/lookfeel.git
+	url = git@github.com:dev-catch/oc-lookfeel.git
 [submodule "plugins/aspendigital/backend"]
 	path = plugins/aspendigital/backend
-	url = git@aspendigital.com:octobercms/backend-theme.git
+	url = git@github.com:dev-catch/oc-backend.git
 [submodule "plugins/devcatch/octobermix"]
 	path = plugins/devcatch/octobermix
 	url = git@github.com:dev-catch/oc-octobermix.git
@@ -13,3 +13,6 @@
 [submodule "plugins/devcatch/instagramfeed"]
 	path = plugins/devcatch/instagramfeed
 	url = git@github.com:dev-catch/oc-instagram-feed.git
+[submodule "plugins/aspendigital/utilities"]
+	path = plugins/aspendigital/utilities
+	url = git@github.com:dev-catch/oc-utilites.git
